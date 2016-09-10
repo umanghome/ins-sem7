@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Encrypt {
+public class Hill {
 	public static void main (String args[]) {
 
 		Scanner terminal = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class Encrypt {
 			}
 		}
 
-		System.out.print("Plaintext: ");
+		System.out.print("Text: ");
 		String plaintext = terminal.nextLine();
 		plaintext = plaintext.replace(" ", "");
 
@@ -26,7 +26,7 @@ public class Encrypt {
 		for (int i = 0; i < diff; i++)
 			plaintext += 'x';
 
-		System.out.println("Plaintext is: " + plaintext);
+		System.out.println("Text is: " + plaintext);
 
 		System.out.println("Key is: ");
 		for (int i = 0; i < n; i++) {
@@ -48,7 +48,7 @@ public class Encrypt {
 			}
 		}
 
-		System.out.println("Plaintext Matrix: ");
+		System.out.println("Text Matrix: ");
 		for (int i = 0; i < div; i++) {
 			for (int j = 0; j < n; j++) {
 				System.out.print(plaintextMatrix[i][j] + "\t");
@@ -86,7 +86,7 @@ public class Encrypt {
 			}
 		}
 
-		System.out.println("Ciphertext: " + ciphertext);
+		System.out.println("Output: " + ciphertext);
 
 	}
 
